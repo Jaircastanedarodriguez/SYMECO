@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./img/Logo_morado_completo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js"></script>
+    <script src="https://kit.fontawesome.com/e52a56e4f3.js" crossorigin="anonymous"></script>
+
+    <title>SYMECO</title>
+</head>
+
+<body class="inicio">
+    <!--Menu de navegación lateral-->
+    <!--barras de menu (Hamburger)-->
+    <nav id="sidemenu" class="menu-expanded">
+        <div id="header">
+            <div id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!--Logo SYMECO-->
+
+        <div class="logo">
+            <a href="./index.html">
+                <div id="logo-img" class="logo-img">
+                    <img src="img/Logo_morado_completo.png" alt="Logo_SYMECO"><a href=""></a></img>
+                </div>
+                <div id="name" class="name">
+                    <a href="./index.html">
+                        <h1>SYMECO</h1>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <!-- Opciones del menu de nevegación -->
+        <div id="menu-items">
+            <div id="inicio" class="item">
+                <a href="./index.html">
+                    <div class="side"></div>
+                    <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="title"><span>Inicio</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="./html/estadisticas.html">
+                    <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="title"><span>Estadísticas</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="./html/reportes.html">
+                    <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="title"><span>Reportes</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="./html/encuesta.html">
+                    <div class="icon"><i class="fas fa-user-friends"></i></div>
+                    <div class="title"><span>Encuesta</span></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor1">
+        <header class="header">
+            <div class="notificaciones"><a href=""><i class="fas fa-bell"></i></a></div>
+            <a href="">
+                <div class="usuario">
+                    <h4 id="nombreUsuario" class=nombreUsuario>Administrador </h4>
+                    <img src="./img/Administrador.png" alt="Administrados">
+                </div>
+            </a>
+        </header>
+        
+        <div class="estudiantes">
+            <h5>Estudiantes</h5>
+            <h3 id="estudiantes">60</h3>
+        </div>
+        <div class="docentes">
+            <h5>Docentes</h5>
+            <h3 id="doncentes">16</h3>
+        </div>
+        <div class="administrativos">
+            <h5>Administrativos</h5>
+            <h3 id="administrativos">43</h3>
+        </div>
+        <div class="personal">
+            <h5>Personal</h5>
+            <h3 id="personal">15</h3>
+        </div>
+        <div class="externos">
+            <h5>Externos</h5>
+            <h3 id="externos">64</h3>
+        </div>
+
+    </div>
+
+    <div class="contenedor2">
+        <div class="usuariosHoy">
+            <h3>Usuarios hoy</h3>
+            <canvas id="myChart1"></canvas>
+        </div>
+
+        <div class="aforo">
+            <h3>Aforo Edificio 411 - Patios de ingeniería</h3>
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div class="capacidad">
+            <h4>Capacidad permitida</h4>
+            <h1>43</h1>
+        </div>
+        <div class="actual">
+            <h4>Capacidad actual</h4>
+            <h1>26</h1>
+        </div>
+    </div>
+
+    <div class="contenedor3">
+        <div class="estudiantesPorMateria">
+            <h3>Cantidad de estudiantes por materia </h3>
+            <table>
+                <tr class="tituloT">
+                    <td>Grupos</td>
+                    <td class="cantidad">Estudiantes</td>
+                </tr>
+                <tr>
+                    <td>Laboratorio de conversión</td>
+                    <td class="cantidad">20</td>
+                </tr>
+                <tr>
+                    <td>Electronica analoga</td>
+                    <td class="cantidad">12</td>
+                </tr>
+                <tr>
+                    <td>Taller de ingenieria</td>
+                    <td class="cantidad">7</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td class="cantidad">39</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sintomas">
+            <h3>Casos con sintomatología</h3>
+            <canvas id="myChart3" width="385" height="256"></canvas>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

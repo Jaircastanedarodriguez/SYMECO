@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../img/Logo_morado_completo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js"></script>
+    <script src="https://kit.fontawesome.com/e52a56e4f3.js" crossorigin="anonymous"></script>
+
+    <title>SYMECO</title>
+</head>
+
+<body  class="inicio" id="encuesta">
+    <!--Menu de navegación lateral-->
+    <!--barras de menu (Hamburger)-->
+    <nav id="sidemenu" class="menu-expanded">
+        <div id="header">
+            <div id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!--Logo SYMECO-->
+
+        <div class="logo">
+            <a href="../index.html">
+                <div id="logo-img" class="logo-img">
+                    <img src="../img/Logo_morado_completo.png" alt="Logo_SYMECO"><a href=""></a></img>
+                </div>
+                <div id="name" class="name">
+                    <a href="../index.html">
+                        <h1>SYMECO</h1>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <!-- Opciones del menu de nevegación -->
+        <div id="menu-items">
+            <div  class="item">
+                <a href="../index.html">
+                    <div class="side"></div>
+                    <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="title"><span>Inicio</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="../html/estadisticas.html">
+                    <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="title"><span>Estadísticas</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="../html/reportes.html">
+                    <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="title"><span>Reportes</span></div>
+                </a>
+            </div>
+            <div id="inicio" class="item">
+                <a href="../html/encuesta.html">
+                    <div class="icon"><i class="fas fa-user-friends"></i></div>
+                    <div class="title"><span>Encuesta</span></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedorEncuesta">
+        <h1>Ingresa tu documento de identidad</h1>
+        <form action="">
+            <div class="tipoDocumento">
+                <div class="icon"><i class="far fa-address-card"></i></div>
+                <select name="tipo de documento" id="tipoDocumento" >
+                    <option value="Cedula de Ciudadania">Cédula de Ciudadanía</option>
+                    <option value="Cedula de Extranjería">Cédula de Extranjería</option>
+                    <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Registro Civil">Registro Civil</option>
+                </select>
+                
+            </div>
+            <div class="numeroDocumento">
+                <div class="icon"><i class="fas fa-hashtag"></i></div>
+                <input type="text" placeholder="Numero de identidad">
+            </div>
+            <a href="../html/encuesta2.html" class="siguiente1">Siguiente</a>
+
+        </form>
+
+    </div>
+
+    <script src="../main.js"></script>
+</body>
